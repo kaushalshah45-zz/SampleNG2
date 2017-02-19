@@ -1,4 +1,4 @@
-package com.copart.example.util;
+package com.kaushal.sample.util;
 
 /**
  * Created by Kashah on 1/23/2017.

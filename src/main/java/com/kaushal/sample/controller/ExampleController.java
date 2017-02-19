@@ -1,8 +1,8 @@
-package com.copart.example.controller;
+package com.kaushal.sample.controller;
 
 
-import com.copart.example.model.Greeting;
-import com.copart.example.util.RestUtils;
+import com.kaushal.sample.model.Greeting;
+import com.kaushal.sample.util.RestUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +18,7 @@ public class ExampleController {
     @RequestMapping("/greetings.json")
     public String getGreetings() throws Exception {
     	Thread.sleep(2000);
-        Greeting [] g = new Greeting[2];
+        Greeting[] g = new Greeting[2];
         g[0] = new Greeting(1, "Hello");
         g[1] = new Greeting(2, "Bonjour");
         Map<String, Object> params = new HashMap<>();

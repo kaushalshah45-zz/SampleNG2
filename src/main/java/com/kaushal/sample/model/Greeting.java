@@ -1,4 +1,4 @@
-package com.copart.example.model;
+package com.kaushal.sample.model;
 
 public class Greeting {
     private final long id;
