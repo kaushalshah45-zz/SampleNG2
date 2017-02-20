@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './components/app.component';
-import { RouterComponent } from './components/router.component';
+import { AppComponent } from './components/main/app.component';
+import { RouterComponent } from './components/router/router.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { TableComponent } from './components/table.component';
-import { NewsComponent } from './components/news.component';
-import { FooterComponent } from './components/footer.component';
+import { TableComponent } from './components/table/table.component';
+import { NewsComponent } from './components/news/news.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { DataService } from './services/DataService'
 
 const appRoutes: Routes = [

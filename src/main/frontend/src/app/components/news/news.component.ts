@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Greeting } from '../models/Greeting';
-import { DataService } from '../services/DataService'
+import { Greeting } from '../../models/Greeting';
+import { DataService } from '../../services/DataService'
 import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-news',
-  templateUrl: '../templates/news.component.html',
-  styleUrls: ['../styles/news.component.css']
+  templateUrl: 'news.component.html',
+  styleUrls: ['news.component.css']
 })
 export class NewsComponent implements OnInit {
   title = 'News Component';
