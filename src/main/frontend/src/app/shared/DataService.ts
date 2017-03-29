@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Greeting } from '../models/Greeting'
 import { Http, Response } from '@angular/http';
 import { Observable }     from 'rxjs/Observable';
 import 'rxjs/add/observable/throw';
@@ -11,16 +10,10 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class DataService {
-    private dataUrl: string="greetings.json";
-
+export class DataService
+{
     constructor (private http: Http) {}
 
-    public getGreetings = function(): Observable<Greeting[]> {
-    return this.http.get(this.dataUrl)
-                    .map(this.extractData)
-                    .catch(this.handleError);
-    }
     private extractData(res: Response) {
         let body = res.json();
         let data = body.data.data;
