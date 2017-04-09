@@ -8,6 +8,7 @@ This is the base project for angular2 with spring boot.  Included is a simple ex
 4) Change or remove the server.contextPath option in ./src/main/resources/application.properties
 
 //--  EXECUTION  --//
+
 1) Copy .war from ./target/ to tomcat/webapps/ and start tomcat to use external tomcat
     OR
 2) execute the .war from ./target/ with java -jar to use embedded tomcat
